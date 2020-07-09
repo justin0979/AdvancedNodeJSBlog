@@ -6,7 +6,7 @@ module.exports = {
   entry: ["./src"],
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
     publicPath: "/", // without /, kept getting 404 errors when refreshing with redux-form
   },
   mode: "development",
@@ -16,7 +16,7 @@ module.exports = {
     },
   },
   devServer: {
-    contentBase: "dist",
+    contentBase: "build",
     host: "0.0.0.0", // added for nginx & docker configs
     port: 3000,
     hot: true,
