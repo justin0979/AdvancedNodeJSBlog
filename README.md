@@ -1,13 +1,21 @@
-# Blog setup for Stephen Grider's Udemy Course "NodeJS: Advanced Concepts"
+## Blog setup for Stephen Grider's Udemy Course "NodeJS: Advanced Concepts"
+
+### Add Stephen's `config/dev.js` to config file. Not included here since I have my info there.
+
+### Load packages for both server and client
+
+`npm run loadpkgs`
+
+### Client is NOT CRA
 
 The `client` directory is NOT using `create-react-app`.
 If you want to use `create-react-app` instead of this current `client`,
 
-- just move the `src` directory to the root with `mv src ..`
+- just move the src directory to the root with `mv src ..`
 - then change dir to root of project with `cd ..`
-- erase `client` with `rm -r client`
-- create new client with `npx create-react-app clien` (or whatever else is used)
-- mv `src` to client with `mv src client` erase CRA `src` with Stephen's.
+- erase client directory with `rm -r client`
+- create new client with `npx create-react-app client` (or whatever is preferred)
+- mv src directory to client dir with `mv src client`, this will erase CRA's `src` with Stephen's.
 
 I used this same `client` code for Stephen's course "Node with React: Fullstack
 Web Development" and was able to successfully complete the course with everything
