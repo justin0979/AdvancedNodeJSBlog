@@ -1,14 +1,20 @@
 ## Blog setup for Stephen Grider's Udemy Course "NodeJS: Advanced Concepts"
 
-### Add Stephen's `config/dev.js` to config file. Not included here since I have my info there.
+### Remember to add `config/dev.js` to `.gitignore` after updating keys.
 
 ### Load packages for both server and client
 
 `npm run loadpkgs`
 
-### Client is NOT CRA
+### Run development
+
+`npm run dev`
+
+### Client is NOT using CRA
 
 The `client` directory is NOT using `create-react-app`.
+I only used this client version because it loads faster than CRA (the app
+only needs CRA to load once, but I use that client for lots of other dev things and it just saves time with my computer).
 If you want to use `create-react-app` instead of this current `client`,
 
 - just move the src directory to the root with `mv src ..`
