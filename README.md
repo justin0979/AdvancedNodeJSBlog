@@ -2,7 +2,7 @@
 
 ### Remember to add `config/dev.js` to `.gitignore` after updating keys.
 
-### Load packages for both server and client
+## To Run Dev Load packages for both server and client
 
 `npm run loadpkgs`
 
