@@ -52,3 +52,11 @@ them. So, if you don't feel comfortable directly working on webpack.config.js fi
 - materialize-css icons not showing up, fixed by adding `link` tag to html
 - proxy issue, reconfigured path in webpack.config.js line 28 from `/auth/google` to just `/auth`
 - updated version of `passport-google-oauth20` from 1.0.0 to 2.0.0
+- in root index.js, I commented out `mongoose.Promise = global.Promise` on line 12 b/c I recall ever having seen that taught or used and thought it might just be an old way of using mongoose. App still works with it commented out. If I see database persistance issues, I'll research more into that command.
+- in root index.js, on line 13, change `useMongoClient: true` to `useNewUrlParser: true`. If I remember correctly, on running dev there would be a deprecation warning.
+
+### Problems I left unsolved after hours of researching, just to have them work the next day
+
+- Proxy issue after click "SAVE BLOG" in review. After clicking "SAVE BLOG", the blog would successfully be saved in the database, and would display in `/blogs` but the `history.push('/blogs')` (or another part) did not re-route from `/blogs/new` to `/blogs`. The page would stay on `/blogs/new` and all of the fields would still have the same info and that info would be saved to the database for however many times I clicked "SAVE BLOG" for. I attempted many changes to webpack-dev-server's proxy (like using [::1] in place of localhost). Nothing worked that night. The next day, the redirect to `/blogs` just worked. Regardless of using [::1] or localhost, everything I changed that didn't work the night before, worked the next day after just turning on the computer and going straight to this app and running it.
+
+So, just becuase I have this problem as "solved", I have no explanation of why it works; therefore, if there is a redirection issue again, it will probably have something to do with how my webpack config is setup (and `withRouter` disagreeing with my setup).
