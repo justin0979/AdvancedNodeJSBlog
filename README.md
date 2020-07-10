@@ -53,7 +53,8 @@ them. So, if you don't feel comfortable directly working on webpack.config.js fi
 - proxy issue, reconfigured path in webpack.config.js line 28 from `/auth/google` to just `/auth`
 - updated version of `passport-google-oauth20` from 1.0.0 to 2.0.0
 - in root index.js, I commented out `mongoose.Promise = global.Promise` on line 12 b/c I recall ever having seen that taught or used and thought it might just be an old way of using mongoose. App still works with it commented out. If I see database persistance issues, I'll research more into that command.
-- in root index.js, on line 13, change `useMongoClient: true` to `useNewUrlParser: true`. If I remember correctly, on running dev there would be a deprecation warning.
+- in root index.js, on line 14, change `useMongoClient: true` to `useNewUrlParser: true`. If I remember correctly, on running dev there would be a deprecation warning.
+- in root index.js, line 15, added `useUnifiedTopology: true` to MongoClient constructor due to deprecation warning.
 
 ### Problems I left unsolved after hours of researching, just to have them work the next day
 
