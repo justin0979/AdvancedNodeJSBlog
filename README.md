@@ -32,17 +32,23 @@ can occur (though nothing really specific because I can't remember each issue).
 
 When I was taking "Node with React: Fullstack Web Development", the course
 had several `Fixes` sections to address old code. Even though I've run
-this current Blog code with no issues, there might be problems needing
+this current Blog code without any noticable issues, there might be problems needing
 fixes that may have been addressed in the Fullstack course. As I go along in this course, I'll try to update this base code.
 
-Also I did run into issues with webpack and other packages that I needed
+Also I did run into issues from the Fullstack course with webpack and other packages that I needed
 to install (like `dotenv-webpack` needing to be installed in the `client`
-directory). I'm comfortable with using webpack (the client side uses
+directory) that should not cause issues with this AdvancedJS course. I'm comfortable with using webpack (the client side uses
 `webpack-dev-server`) and so
-when trying to run `npm run dev`, the webpack dev server usually specifically
-said which package was needed. However, I had to look up how to use those packages,
+when trying to run `npm run dev`, the webpack dev server will usually specifically
+state which package was needed. However, I had to look up how to use those packages,
 which was usually very straight forward in the doc's.
 
 Other issues that weren't specifically stated, I just googled what I was trying to
 do and what errors were showing up and there were always answers to how to fix
 them. So, if you don't feel comfortable directly working on webpack.config.js files (or even babel.config.js), then CRA is a good option.
+
+### Problems I immediately ran into and fixed
+
+- materialize-css icons not showing up, fixed by adding `link` tag to html
+- proxy issue, reconfigured path in webpack.config.js line 28 from `/auth/google` to just `/auth`
+- updated version of `passport-google-oauth20` from 1.0.0 to 2.0.0
