@@ -28,7 +28,7 @@ Web Development" and was able to successfully complete the course with everythin
 working on both development and production (on heroku). Below mentions issues that
 can occur (though nothing really specific because I can't remember each issue).
 
-### There is a possiblity of needing to install extra packages during course or refer to Fixes sections from Fullstack course.
+### There is a possiblity of needing to install extra packages during course, some of which refer to Fixes sections from Fullstack course.
 
 When I was taking "Node with React: Fullstack Web Development", the course
 had several `Fixes` sections to address old code. Even though I've run
