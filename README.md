@@ -1,6 +1,7 @@
 ## Blog setup for Stephen Grider's Udemy Course "NodeJS: Advanced Concepts"
 
 ### Remember to add `config/dev.js` to `.gitignore` after updating keys.
+
 ### Also, remember that config/dev.js does NOT have your mongoURI key
 
 ## To Run Dev Load packages for both server and client
