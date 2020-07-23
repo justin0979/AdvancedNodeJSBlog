@@ -26,7 +26,7 @@ module.exports = (app) => {
     // if yes, then respond to the request right away and return
     if (cachedBlogs) {
       console.log(`
-      SERVING FROM CACHE
+      SERVING FROM CACHE: ${cachedBlogs}
       `);
       return res.send(JSON.parse(cachedBlogs));
     }
@@ -36,7 +36,7 @@ module.exports = (app) => {
 
     const blogs = await Blog.find({ _user: req.user.id });
     console.log(`
-      SERVING FROM MONGODB
+      SERVING FROM MONGODB: ${blogs}
       `);
 
     res.send(blogs);

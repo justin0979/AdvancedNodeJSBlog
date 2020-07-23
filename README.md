@@ -1,6 +1,11 @@
 ## Blog setup for Stephen Grider's Udemy Course "NodeJS: Advanced Concepts"
 
+<h1>Be sure to read the `master` branch README<h1>
+<p>This branch is what I'm currently using for the course</p>
+<p>There will not be a `config/dev.js` since I have my keys there</p>
+
 ### Remember to add `config/dev.js` to `.gitignore` after updating keys.
+
 ### Also, remember that config/dev.js does NOT have your mongoURI key
 
 ## To Run Dev Load packages for both server and client
