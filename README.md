@@ -8,7 +8,7 @@ Additions to `.gitignore` might still be tracked by `.git`, so run the
 following:</br>
 `git rm --cached .`</br>
 `git add .`</br>
-`git commit -m "git shouuld no longer tracks files added to .gitignore from this point foward"`</br>
+`git commit -m "git should no longer tracks files added to .gitignore from this point foward"`</br>
 
 ## To Run Dev Load packages for both server and client
 
