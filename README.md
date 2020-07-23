@@ -5,10 +5,10 @@
 ### Also, remember that config/dev.js does NOT have your mongoURI key
 
 Additions to `.gitignore` might still be tracked by `.git`, so run the
-following:
-`git rm --cached .`
-`git add .`
-`git commit -m "git no longer tracks files added to .gitignore from this point foward"`
+following:</br>
+`git rm --cached .`</br>
+`git add .`</br>
+`git commit -m "git shouuld no longer tracks files added to .gitignore from this point foward"`</br>
 
 ## To Run Dev Load packages for both server and client
 
